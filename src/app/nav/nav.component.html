@@ -11,8 +11,15 @@
           </li>
         </ul>
         <form class="d-flex">
-          <input class="form-control me-2" type="search" [placeholder]="messages.search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">{{messages.search}}</button>
+            <span class="text-light me-2">EN</span>
+            <div class="form-check form-switch">
+                
+                <input (change)="langSwitch($event)" class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                
+            </div>
+            <span class="text-light me-2">HU</span>
+            <input class="form-control me-2" type="search" [placeholder]="messages.search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">{{messages.search}}</button>
         </form>
       </div>
     </div>
