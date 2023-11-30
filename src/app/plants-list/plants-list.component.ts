@@ -7,12 +7,22 @@ import { BaseService } from '../base.service';
   styleUrls: ['./plants-list.component.css']
 })
 export class PlantsListComponent {
-adatok:any;
+  adatok:any;
+  showError=false;
+  errorMessage = "";
+
 
   constructor(private base:BaseService){
     this.base.getData().subscribe(
-      (res) => {
-        this.adatok=res
+      {
+        next: (res) => {
+          this.adatok = res
+          this.showError = false
+        },
+        error: (err) => {
+          this.showError = true
+          this.errorMessage = err.message
+        }
       }
     );
   }

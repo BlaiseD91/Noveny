@@ -24,7 +24,6 @@ export class ConfigService {
       (response) => {
         this.config=response;
         this.configSub.next(response);
-        console.log(this.config);
       }
     );
   }
