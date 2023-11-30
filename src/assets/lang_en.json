@@ -1,0 +1,9 @@
+{
+    "nav":{
+        "menu":[
+            {"text":"Home", "link":"home"},
+            {"text":"Plants", "link":"plants"}
+        ],
+        "search":"Search"
+    }
+}

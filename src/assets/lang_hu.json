@@ -1,0 +1,9 @@
+{
+    "nav":{
+        "menu":[
+            {"text":"Kezdőoldal", "link":"home"},
+            {"text":"Növények", "link":"plants"}
+        ],
+        "search":"Keresés"
+    }
+}
